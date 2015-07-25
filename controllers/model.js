@@ -15,7 +15,7 @@ connection.connect();
 
 var model =
 	{
-		"user":[]
+		"person":[]
 	};
 
 

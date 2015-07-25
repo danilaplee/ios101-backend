@@ -4,7 +4,7 @@ var config  =
 {
 	host: 'localhost',
 	user: 'root',
-	password: 'k451lis',
+	password: 'q17Xp9q8Ti',
 	database: 'mcs-swift'
 };
 var connection 	= mysql.createConnection(config)

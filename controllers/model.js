@@ -51,7 +51,7 @@ var getData = function(tableName)
 
 //UPDATE PROGRAM CACHE WITH A SMALL INTERVAL
 
-setInterval(getData, 1000, 'user');
+setInterval(getData, 1000, 'person');
 
 exports.index = model;
 

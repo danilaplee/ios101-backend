@@ -18,7 +18,7 @@ router.post('/:model', function(req, res)
 {
 	var body = req.body
 	var modelName = req.params.model
-	var makeComple = function(data)
+	var makeComplete = function(data)
 	{
 		res.send(data)
 	}
@@ -31,11 +31,24 @@ router.put('/:model', function(req, res)
 {
 	var body = req.body
 	var modelName = req.params.model
-	var makeComple = function(data)
+	var makeComplete = function(data)
 	{
 		res.send(data)
 	}
 	model.updateItem(body, modelName, makeComplete)
+
+});
+
+
+router.delete('/:model/:id', function(req, res) 
+{
+	var id = req.params.id
+	var modelName = req.params.model
+	var makeComplete = function(data)
+	{
+		res.send(data)
+	}
+	model.deleteItem(id, modelName, makeComplete)
 
 });
 
